@@ -187,7 +187,7 @@ function generateAuthors(authors){
 };
 
 
-
+// COMMENT FUNCTION
 function generateComments(array){
     let tempStr = "";
     array.forEach(function (element){
