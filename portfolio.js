@@ -18,7 +18,7 @@ const projects = [
         ],
         likes: Math.floor(Math.random()*1000),
         views: Math.floor(Math.random()*1000),
-        aanmaakDatum: "Friday Oct 16 2020 10:31:16",
+        aanmaakDatum: "Friday Oct 16 2020",
         modificatieDatum: generateDate(),
     },
 
@@ -63,7 +63,7 @@ const projects = [
         ],
         likes: Math.floor(Math.random()*1000),
         views: Math.floor(Math.random()*1000),
-        aanmaakDatum: "Friday Oct 16 2020 10:31:16",
+        aanmaakDatum: "Friday Oct 16 2020",
         modificatieDatum: generateDate(),
     },
     
@@ -74,9 +74,7 @@ const projects = [
 function generateDate(){
     let date = new Date();
     let n = date.toDateString();
-    let time = date.toLocaleTimeString();
-    let timeDate = n + " " + time;
-    return timeDate;
+    return n;
 };
 
 // PORTFOLIO FUNCTION

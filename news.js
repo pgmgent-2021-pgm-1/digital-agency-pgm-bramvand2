@@ -108,7 +108,7 @@ const news = [
                 ], 
             }
         ],
-        aanmaakDatum: "Friday Oct 16 2020 10:31:16",
+        aanmaakDatum: "Friday Oct 16 2020",
         modificatieDatum: generateDate(),        
     },
 
@@ -151,7 +151,7 @@ const news = [
                 ],
             },
         ],
-        aanmaakDatum: "Friday Oct 16 2020 10:31:16",
+        aanmaakDatum: "Friday Oct 16 2020",
         modificatieDatum: generateDate(),
         
     },
@@ -161,9 +161,7 @@ const news = [
 function generateDate(){
     let date = new Date();
     let n = date.toDateString();
-    let time = date.toLocaleTimeString();
-    let timeDate = n + " " + time;
-    return timeDate;
+    return n;
 };
 
 // NEWS FUNCTION
